@@ -105,7 +105,7 @@ def load_mini_imagenet(data_dir, config, splits):
         ds_filename = os.path.join(data_dir, 'data',
                                    f'mini-imagenet-cache-{split}.pkl')
         # load dict with 'class_dict' and 'image_data' keys
-        with open(ds_filename, 'rb') as f:
+        with open(ds_filename, 'r') as f:
             data_dict = pickle.load(f)
         
         # Convert original data to format [n_classes, n_img, w, h, c]
