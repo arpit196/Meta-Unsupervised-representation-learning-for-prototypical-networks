@@ -208,9 +208,6 @@ class Prototypical(Model):
             uns_loss = uns_loss + 0.5
         '''
         
-        #z_meta = self.encoder(cat)
-        
-        #z_feat1 = self.meta_enc1(cat)
         
         '''
         z_att1 = tf.keras.layers.Attention()(
